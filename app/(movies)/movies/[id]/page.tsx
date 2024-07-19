@@ -24,5 +24,4 @@ export default async function MovieDetail({
   const [movie, videos] = await Promise.all([getMovie(id), getVideos(id)]);
   console.log("end fetching");
   return <h1>{movie.title}</h1>;
-  
 }
